@@ -34,6 +34,7 @@ namespace HangmanChallenge
             Console.WriteLine("Now, give the device to player 2. Let's see if they can read your mind! :)\n\n" +
                 "Press enter to start the game...");
             Console.ReadLine();
+            Console.Clear();
             RunGame(buzzWord, lives);
         }
 
@@ -484,54 +485,3 @@ namespace HangmanChallenge
         }
     }
 }
-
-
-
-//if (incorrectChar.Count == 0)
-//                {
-//Console.WriteLine("\n" +
-//"__________ \n" +
-//"|       |  \n" +
-//"|       0  \n" +
-//"|      /|\ \n" +
-//"|      / \ \n" +
-//"|          \n" +
-//"|          \n" +
-//"|          \n");
-//                }
-//                else if (incorrectChar.Count == 1)
-//                {
-//                    Console.WriteLine("\n" +
-//                        "__________ \n" +
-//                        "|       |  \n" +
-//                        "|       0  \n" +
-//                        "|          \n" +
-//                        "|          \n" +
-//                        "|          \n" +
-//                        "|          \n" +
-//                        "|          \n");
-//                }
-//                else if (incorrectChar.Count == 2)
-//                {
-//                    Console.WriteLine("\n" +
-//                        "__________ \n" +
-//                        "|       |  \n" +
-//                        "|       0  \n" +
-//                        "|       |  \n" +
-//                        "|          \n" +
-//                        "|          \n" +
-//                        "|          \n" +
-//                        "|          \n");
-//                }
-//                else if (incorrectChar.Count == 3)
-//                {
-//                    Console.WriteLine("\n" +
-//                        "__________ \n" +
-//                        "|       |  \n" +
-//                        "|       0  \n" +
-//                        "|          \n" +
-//                        "|          \n" +
-//                        "|          \n" +
-//                        "|          \n" +
-//                        "|          \n");
-//                }
