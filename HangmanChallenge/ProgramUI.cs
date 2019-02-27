@@ -80,11 +80,8 @@ namespace HangmanChallenge
             {
                 DisplayHangman();
                 Console.WriteLine("Incorrect guesses:");
-                foreach (char c in _incorrectChar)
-                {
-                        Console.WriteLine($"{c}, ");
-                }
-                Console.WriteLine("\n\n");
+                DisplayIncorrectGuesses(_incorrectChar);
+                Console.WriteLine("\n");
                 Console.WriteLine(displayString.ToString());
                 Console.WriteLine("\nGuess a letter");
                 char guess = char.Parse(Console.ReadLine());
@@ -139,6 +136,16 @@ namespace HangmanChallenge
 
             Console.WriteLine("Press enter to exit");
             Console.ReadLine();
+        }
+
+        private void DisplayIncorrectGuesses(List<char> incorrectChar)
+        {
+            StringBuilder stringbuilder = new StringBuilder();
+            foreach (var c in incorrectChar)
+            {
+                stringbuilder.Append($"{c}, ");
+            }
+            Console.WriteLine(stringbuilder.ToString());
         }
 
         public void DisplayHangman()
