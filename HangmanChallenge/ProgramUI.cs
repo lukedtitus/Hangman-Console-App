@@ -133,7 +133,7 @@ namespace HangmanChallenge
             }
             else
             {
-                Console.WriteLine("You lost. Try again.");
+                Console.WriteLine($"You lost. The buzzword was {buzzWord}.");
                 DisplayHangman();
             }
 
