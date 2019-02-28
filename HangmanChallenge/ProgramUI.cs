@@ -79,6 +79,8 @@ namespace HangmanChallenge
             while (!win && strike != lives)
             {
                 DisplayHangman();
+                Console.WriteLine($"Total lives: {lives}");
+                Console.WriteLine($"Strikes: {strike}");
                 Console.WriteLine("Incorrect guesses:");
                 DisplayIncorrectGuesses(_incorrectChar);
                 Console.WriteLine("\n");
@@ -134,7 +136,7 @@ namespace HangmanChallenge
                 DisplayHangman();
             }
 
-            Console.WriteLine("Press enter to exit");
+            Console.WriteLine("Press enter to exit...");
             Console.ReadLine();
         }
 
